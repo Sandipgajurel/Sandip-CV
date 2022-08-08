@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Sandip-CV/precache-manifest.71ea3fdddda0e03ed057d9bd7c758ce2.js"
+  "/Sandip-CV/precache-manifest.58e76d9abd6d0f9bed03622e429edf5a.js"
 );
 
 workbox.clientsClaim();
