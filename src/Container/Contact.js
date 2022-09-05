@@ -8,6 +8,7 @@ import TextareaAutosize from "@mui/material/TextareaAutosize";
 const Contact = () => {
   return (
     <div
+    id="contact"
       className="row"
       style={{
         display: "flex",
@@ -45,7 +46,7 @@ const Contact = () => {
           <hr />
 
           <form
-            class=""
+            className=""
             action="mailto:sandipgajurel809@gmaiil.com"
             method="post"
             encType="text/plain"
