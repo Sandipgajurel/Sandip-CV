@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/Sandip-CV/static/media/3.cba0b89d.png"
   },
   {
-    "revision": "4b3b41fd143f696c6246152621c42404",
+    "revision": "4600b4aa509b91e44e75472b17a72aa0",
     "url": "/Sandip-CV/index.html"
   }
 ];
