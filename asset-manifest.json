@@ -1,7 +1,7 @@
 {
   "main.css": "/Sandip-CV/static/css/main.6709208e.chunk.css",
-  "main.js": "/Sandip-CV/static/js/main.6a144d57.chunk.js",
-  "main.js.map": "/Sandip-CV/static/js/main.6a144d57.chunk.js.map",
+  "main.js": "/Sandip-CV/static/js/main.29a4d15d.chunk.js",
+  "main.js.map": "/Sandip-CV/static/js/main.29a4d15d.chunk.js.map",
   "static/js/1.e4582fd3.chunk.js": "/Sandip-CV/static/js/1.e4582fd3.chunk.js",
   "static/js/1.e4582fd3.chunk.js.map": "/Sandip-CV/static/js/1.e4582fd3.chunk.js.map",
   "static/js/2.a459e6aa.chunk.js": "/Sandip-CV/static/js/2.a459e6aa.chunk.js",
@@ -12,6 +12,6 @@
   "static/media/3.png": "/Sandip-CV/static/media/3.cba0b89d.png",
   "static/css/main.6709208e.chunk.css.map": "/Sandip-CV/static/css/main.6709208e.chunk.css.map",
   "index.html": "/Sandip-CV/index.html",
-  "precache-manifest.2f8dd2ce75f9d0249948a54e90dac3be.js": "/Sandip-CV/precache-manifest.2f8dd2ce75f9d0249948a54e90dac3be.js",
+  "precache-manifest.bbfa66135c2df2ee3b410c48bc24e569.js": "/Sandip-CV/precache-manifest.bbfa66135c2df2ee3b410c48bc24e569.js",
   "service-worker.js": "/Sandip-CV/service-worker.js"
 }
