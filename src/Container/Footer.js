@@ -55,7 +55,8 @@ class Footer extends Component {
             </div>
             <div style={{marginLeft:'auto',marginRight:'auto'}}>
               <ul className="copyright" style={{ fontWeight: "bold" }}>
-                &copy; Copyright 2022 Sandip Gajurel
+                
+              &copy; Copyright 2022 Sandip Gajurel
               </ul>
             </div>
           </div>

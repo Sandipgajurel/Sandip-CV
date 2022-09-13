@@ -1,11 +1,8 @@
 import { Box } from "@mui/system";
 import React from "react";
-import '../App.css'
-//import ButtonAppBar from "./Container/Navbar";
+import "../App.css";
 import img from "../img/2.jpg";
 import reactimg from "../img/3.png";
-
-
 import SchoolIcon from "@mui/icons-material/School";
 import Card from "@mui/material/Card";
 import { CardActionArea } from "@mui/material";
@@ -17,6 +14,10 @@ import Contact from "./Contact";
 import Projects from "./Projects";
 import BackToTopButton from "./BackToTopButton";
 import Header from "./header";
+import {
+  BlinkingCursorTextBuilder,
+  FloatingLettersTextBuilder,
+} from "react-animated-text-builders";
 
 function Mainpage() {
   return (
@@ -35,7 +36,7 @@ function Mainpage() {
                 borderRadius: 150,
                 float: "right",
                 marginRight: "20px",
-                marginTop:'100px'
+                marginTop: "100px",
               }}
               alt=""
               src={img}
@@ -47,7 +48,6 @@ function Mainpage() {
                 paddingTop: "100px",
                 fontStyle: "italic",
                 fontSize: "50px",
-                
               }}
             >
               Sandip Gajurel
@@ -58,21 +58,21 @@ function Mainpage() {
             style={{
               marginLeft: "10px",
               height: "auto",
-//               background: `rgb(34,34,84)`,
-// background: `linear-gradient(90deg, rgba(34,34,84,1) 0%, rgba(40,39,39,1) 100%)`, marginRight: "10px",
-backgroundColor: `#74EBD5`,
-backgroundImage: `linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%)`,
-             
-boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
+              //               background: `rgb(34,34,84)`,
+              // background: `linear-gradient(90deg, rgba(34,34,84,1) 0%, rgba(40,39,39,1) 100%)`, marginRight: "10px",
+              backgroundColor: `#74EBD5`,
+              backgroundImage: `linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%)`,
+
+              boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
             }}
           >
-            <span
+            {/* <span
               style={{
                 paddingTop: "40px",
                 fontWeight: "bold",
                 fontSize: "23px",
-                fontFamily:'Alumni Sans Pinstripe',
-                color:'black'
+                fontFamily: "Alumni Sans Pinstripe",
+                color: "black",
               }}
             >
               "Being work dedicated and hardworking individual, executing tasks
@@ -80,12 +80,42 @@ boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
               work in a dynamic organization where I can contribute to the team
               there by sharping my own skills in the information technology
               which will surely payback to the society and nation."
-            </span>
+            </span> */}
+
+            <BlinkingCursorTextBuilder
+              textStyle={{
+                background: `-webkit-linear-gradient(to right, #bd0000, #0637cb)`,
+                background: `linear-gradient(to right, #bd0000, #0637cb)`,
+                webkitBackgroundClip: "text",
+                backgroundClip: "text",
+                color: "transparent",
+                paddingTop: "40px",
+
+                fontWeight: "bold",
+                fontStyle: "italic",
+                fontSize: "24px",
+              }}
+              style={{
+                transform: "rotate(0deg)",
+                marginTop: "10px",
+                marginRight: "5px",
+                marginLeft: "5px",
+                marginBottom: "5px",
+              }}
+              //cursorComponent={<div style={{color: "Highlight", fontStyle: "italic"}}> Easy to use!</div>}
+              //blinkTimeAfterFinish={0}
+            >
+              "Being work dedicated and hardworking individual, executing tasks
+              independently and in a group is my foremost strength. I wish to
+              work in a dynamic organization where I can contribute to the team
+              there by sharping my own skills in the information technology
+              which will surely payback to the society and nation."{" "}
+            </BlinkingCursorTextBuilder>
           </Box>
         </div>
         <div
           className="row"
-              id ="experience"
+          id="experience"
           style={{
             display: "flex",
             height: "480px",
@@ -96,16 +126,16 @@ boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
         >
           <div className="column" style={{ flex: "50%", marginTop: "110px" }}>
             <h1 style={{ color: "ButtonShadow" }}>EXPERIENCE</h1>{" "}
-            <WorkHistoryIcon style={{ color: "white", fontSize:'50px' }} />
+            <WorkHistoryIcon style={{ color: "white", fontSize: "50px" }} />
           </div>
 
-          <div className="column" style={{ flex: "50%", marginRight: "10px"}}>
+          <div className="column" style={{ flex: "50%", marginRight: "10px" }}>
             <Card
               className="shadow-md m2 p3 rounded"
               style={{
-                float:'right',
-                marginRight:'auto',
-                marginBottom:'auto',
+                float: "right",
+                marginRight: "auto",
+                marginBottom: "auto",
                 width: "70%",
                 background: `rgb(164,164,164)`,
                 background: `linear-gradient(90deg, rgba(164,164,164,1) 0%, rgba(225,225,252,1) 100%)`,
@@ -138,14 +168,14 @@ boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 
         <div
           className="row"
-          id = "education"
+          id="education"
           style={{
             display: "flex",
             height: "auto",
             marginTop: "3px",
             backgroundColor: "black",
             paddingTop: "50px",
-            paddingBottom:"30px"
+            paddingBottom: "30px",
           }}
         >
           <div className="column" style={{ flex: "50%", marginLeft: "15px" }}>
@@ -253,7 +283,7 @@ boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
           </div>
           <div className="column" style={{ flex: "50%", marginTop: "170px" }}>
             <h1 style={{ color: "ButtonShadow" }}>EDUCATION</h1>{" "}
-            <SchoolIcon style={{ color: "white", fontSize:'50px'  }} />
+            <SchoolIcon style={{ color: "white", fontSize: "50px" }} />
           </div>
         </div>
 
@@ -268,7 +298,7 @@ boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
             marginTop: "3px",
             backgroundColor: "black",
             paddingTop: "50px",
-            paddingBottom:'20px'
+            paddingBottom: "20px",
           }}
         >
           <div
@@ -359,7 +389,7 @@ boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
           </div>
           <div className="column" style={{ flex: "50%", marginTop: "120px" }}>
             <h1 style={{ color: "white" }}>SKILLS</h1>{" "}
-            <ComputerIcon style={{ color: "white" , fontSize:'50px' }} />
+            <ComputerIcon style={{ color: "white", fontSize: "50px" }} />
           </div>
         </div>
 

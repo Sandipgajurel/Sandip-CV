@@ -4,11 +4,14 @@ import Mainpage from "./Container/mainpage";
 
 function App() {
   return (
-    <>  
-  <Routes>
-  <Route path="/" element={<Mainpage />} />
- </Routes>
-</>
+<Mainpage />
+
+//Routes doesnot work properly on github pages so it was done like this for deployment in github pages.
+    //     <>  
+//   <Routes>
+//   <Route path="/" element={<Mainpage />} />
+//  </Routes>
+// </>
   );
 }
 

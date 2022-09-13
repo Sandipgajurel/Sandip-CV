@@ -5,7 +5,7 @@ import TaskAltIcon from "@mui/icons-material/TaskAlt";
 const Projects = () => {
   return (
     <div
-    id="projects"
+      id="projects"
       className="row"
       style={{
         display: "flex",
@@ -13,12 +13,12 @@ const Projects = () => {
         marginTop: "3px",
         backgroundColor: "black",
         paddingTop: "50px",
-       paddingBottom:'20px'
+        paddingBottom: "20px",
       }}
     >
       <div className="column" style={{ flex: "50%", marginTop: "240px" }}>
         <h1 style={{ color: "ButtonShadow" }}>PROJECTS</h1>
-        <TaskAltIcon style={{ color: "white", fontSize:'50px'  }} />
+        <TaskAltIcon style={{ color: "white", fontSize: "50px" }} />
       </div>
 
       <div className="column" style={{ flex: "50%", marginRight: "15px" }}>

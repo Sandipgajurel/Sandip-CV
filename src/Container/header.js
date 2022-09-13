@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   logo: {
-    paddingRight:'200px',
+    paddingRight:'100px',
     flexGrow: "1",
     cursor: "pointer",
   
@@ -53,10 +53,11 @@ function Header() {
       <Toolbar>
         <Typography variant="h5" className={classes.logo}>
           Sandip Gajurel
+          <hr />
           <div style={{ float: "right"}}>
             <a
               href="https://www.facebook.com/laxman.gajurel.50"
-              style={{ marginRight: "5px" }}
+              style={{ marginRight: "5px", color:'blue' }}
             >
               <FacebookIcon />
             </a>
@@ -70,14 +71,14 @@ function Header() {
 
             <a
               href="https://www.linkedin.com/in/sandip-gajurel-835200240"
-              style={{ marginRight: "5px" }}
+              style={{ marginRight: "5px", color:'blue' }}
             >
               <LinkedInIcon />
             </a>
 
             <a
               href="https://github.com/Sandipgajurel"
-              style={{color:'blue', marginRight:'90px'}}
+              style={{color:'blue', marginRight:'100px'}}
             >
               <GitHubIcon />
             </a>

@@ -26,14 +26,14 @@ const BackToTopButton = () => {
         <Button
           onClick={scrollUp}
           style={{
-            backgroundColor: "blue",
+            backgroundColor: "green",
             color: "white",
             position: "fixed",
             bottom: "50px",
             right: "40px",
-            height: "50px",
-            width: "50px",
-            fontSize: "50px",
+            height: "45px",
+            width: "10px",
+            fontSize: "40px",
           }}
         >
           ^

@@ -26,7 +26,7 @@ const Contact = () => {
 
       <div className="column" style={{ flex: "50%", marginRight: "15px" }}>
         <div class="column" display="flex">
-          <div class="row">
+          <div className="row">
             <article>
               <LocationOnIcon style={{ color: "white", marginRight: "5px" }} />{" "}
               <span style={{ color: "white" }}>Koteshwor, Kathmandu Nepal</span>
@@ -46,7 +46,6 @@ const Contact = () => {
           <hr />
 
           <form
-            className=""
             action="mailto:sandipgajurel809@gmaiil.com"
             method="post"
             encType="text/plain"
