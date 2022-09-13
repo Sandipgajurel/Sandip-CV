@@ -58,6 +58,7 @@ function Mainpage() {
             style={{
               marginLeft: "10px",
               height: "auto",
+              marginRight:'10px',
               //               background: `rgb(34,34,84)`,
               // background: `linear-gradient(90deg, rgba(34,34,84,1) 0%, rgba(40,39,39,1) 100%)`, marginRight: "10px",
               backgroundColor: `#74EBD5`,
@@ -82,7 +83,7 @@ function Mainpage() {
               which will surely payback to the society and nation."
             </span> */}
 
-            <BlinkingCursorTextBuilder
+<BlinkingCursorTextBuilder
               textStyle={{
                 background: `-webkit-linear-gradient(to right, #bd0000, #0637cb)`,
                 background: `linear-gradient(to right, #bd0000, #0637cb)`,
@@ -105,11 +106,11 @@ function Mainpage() {
               //cursorComponent={<div style={{color: "Highlight", fontStyle: "italic"}}> Easy to use!</div>}
               //blinkTimeAfterFinish={0}
             >
-              "Being work dedicated and hardworking individual, executing tasks
+              " Being work dedicated and hardworking individual, executing tasks
               independently and in a group is my foremost strength. I wish to
               work in a dynamic organization where I can contribute to the team
               there by sharping my own skills in the information technology
-              which will surely payback to the society and nation."{" "}
+              which will surely payback to the society and nation."
             </BlinkingCursorTextBuilder>
           </Box>
         </div>
