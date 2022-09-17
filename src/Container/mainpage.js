@@ -1,5 +1,5 @@
-import { Box } from "@mui/system";
 import React from "react";
+import { Box } from "@mui/system";
 import "../App.css";
 import img from "../img/2.jpg";
 import reactimg from "../img/3.png";
@@ -18,6 +18,9 @@ import {
   BlinkingCursorTextBuilder,
   FloatingLettersTextBuilder,
 } from "react-animated-text-builders";
+import Experience from "./Experience";
+import Education from "./Education";
+import Skills from "./Skills";
 
 function Mainpage() {
   return (
@@ -36,7 +39,9 @@ function Mainpage() {
                 borderRadius: 150,
                 float: "right",
                 marginRight: "20px",
-                marginTop: "100px",
+                marginTop: "20px",
+                border: "4px solid #fff",
+                boxShadow: "0px 2px 5px #ccc",
               }}
               alt=""
               src={img}
@@ -44,358 +49,80 @@ function Mainpage() {
             <h1
               style={{
                 textAlign: "left",
-                marginLeft: "50px",
-                paddingTop: "100px",
+                paddingLeft: "50px",
+                paddingTop: "90px",
                 fontStyle: "italic",
                 fontSize: "50px",
+                backgroundColor: "black",
+                marginTop: "90px",
+                color: "white",
+                paddingBottom: "70px",
               }}
             >
               Sandip Gajurel
             </h1>
           </div>
-          <hr />
-          <Box
+          <div
             style={{
-              marginLeft: "10px",
-              height: "auto",
-              marginRight:'10px',
-              //               background: `rgb(34,34,84)`,
-              // background: `linear-gradient(90deg, rgba(34,34,84,1) 0%, rgba(40,39,39,1) 100%)`, marginRight: "10px",
-              backgroundColor: `#74EBD5`,
-              backgroundImage: `linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%)`,
-
-              boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
+              backgroundColor: "black",
+              marginTop: "-38px",
+              paddingBottom: "30px",
             }}
           >
-            {/* <span
+            <Box
               style={{
-                paddingTop: "40px",
-                fontWeight: "bold",
-                fontSize: "23px",
-                fontFamily: "Alumni Sans Pinstripe",
-                color: "black",
+                marginLeft: "10px",
+                height: "auto",
+                marginRight: "10px",
+                paddingTop: "5px",
+                borderRadius: "20px",
+                backgroundColor: `#74EBD5`,
+                backgroundImage: `linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%)`,
+
+                boxShadow: `5px 5px 37px 13px rgba(24,29,122,1)`,
+                webkitBoxShadow: ` 5px 5px 37px 13px rgba(24,29,122,1)`,
+                mozBoxShadow: ` 5px 5px 37px 0px rgba(24,29,122,1)`,
               }}
             >
-              "Being work dedicated and hardworking individual, executing tasks
-              independently and in a group is my foremost strength. I wish to
-              work in a dynamic organization where I can contribute to the team
-              there by sharping my own skills in the information technology
-              which will surely payback to the society and nation."
-            </span> */}
-
-<BlinkingCursorTextBuilder
-              textStyle={{
-                background: `-webkit-linear-gradient(to right, #bd0000, #0637cb)`,
-                background: `linear-gradient(to right, #bd0000, #0637cb)`,
-                webkitBackgroundClip: "text",
-                backgroundClip: "text",
-                color: "transparent",
-                paddingTop: "40px",
-
-                fontWeight: "bold",
-                fontStyle: "italic",
-                fontSize: "24px",
-              }}
-              style={{
-                transform: "rotate(0deg)",
-                marginTop: "10px",
-                marginRight: "5px",
-                marginLeft: "5px",
-                marginBottom: "5px",
-              }}
-              //cursorComponent={<div style={{color: "Highlight", fontStyle: "italic"}}> Easy to use!</div>}
-              //blinkTimeAfterFinish={0}
-            >
-              " Being work dedicated and hardworking individual, executing tasks
-              independently and in a group is my foremost strength. I wish to
-              work in a dynamic organization where I can contribute to the team
-              there by sharping my own skills in the information technology
-              which will surely payback to the society and nation."
-            </BlinkingCursorTextBuilder>
-          </Box>
-        </div>
-        <div
-          className="row"
-          id="experience"
-          style={{
-            display: "flex",
-            height: "480px",
-            marginTop: "190px",
-            backgroundColor: "black",
-            paddingTop: "60px",
-          }}
-        >
-          <div className="column" style={{ flex: "50%", marginTop: "110px" }}>
-            <h1 style={{ color: "ButtonShadow" }}>EXPERIENCE</h1>{" "}
-            <WorkHistoryIcon style={{ color: "white", fontSize: "50px" }} />
-          </div>
-
-          <div className="column" style={{ flex: "50%", marginRight: "10px" }}>
-            <Card
-              className="shadow-md m2 p3 rounded"
-              style={{
-                float: "right",
-                marginRight: "auto",
-                marginBottom: "auto",
-                width: "70%",
-                background: `rgb(164,164,164)`,
-                background: `linear-gradient(90deg, rgba(164,164,164,1) 0%, rgba(225,225,252,1) 100%)`,
-              }}
-            >
-              <CardActionArea style={{ alignItems: "center" }}>
-                <img style={{ width: "100%" }} src={reactimg} alt="" />
-                <div style={{ textAlign: "center" }}>
-                  <h1
-                    style={{
-                      fontStyle: "italic",
-                      color: "black",
-
-                      fontWeight: "bold",
-                    }}
-                  >
-                    React JS Intern
-                  </h1>
-                  <h3 style={{ color: "black" }}>
-                    GrayCode Technology Pvt. Ltd
-                  </h3>
-                  <h4 style={{ color: "black" }}>
-                    September, 2021 - January, 2022
-                  </h4>
-                </div>
-              </CardActionArea>
-            </Card>
+              <BlinkingCursorTextBuilder
+                textStyle={{
+                  background: `-webkit-linear-gradient(to right, #bd0000, #0637cb)`,
+                  background: `linear-gradient(to right, #bd0000, #0637cb)`,
+                  webkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  paddingTop: "5px",
+                  fontWeight: "bold",
+                  fontStyle: "italic",
+                  fontSize: "24px",
+                  paddingLeft: "5px",
+                  paddingRight: "5px",
+                }}
+                style={{
+                  transform: "rotate(0deg)",
+                  //marginTop: "10px",
+                  marginRight: "5px",
+                  marginLeft: "5px",
+                  paddingBottom: "10px",
+                }}
+                //cursorComponent={<div style={{color: "Highlight", fontStyle: "italic"}}> Easy to use!</div>}
+                //blinkTimeAfterFinish={0}
+              >
+                " Being work dedicated and hardworking individual, executing
+                tasks independently and in a group is my foremost strength. I
+                wish to work in a dynamic organization where I can contribute to
+                the team there by sharping my own skills in the information
+                technology which will surely payback to the society and nation."
+              </BlinkingCursorTextBuilder>
+            </Box>
           </div>
         </div>
 
-        <div
-          className="row"
-          id="education"
-          style={{
-            display: "flex",
-            height: "auto",
-            marginTop: "3px",
-            backgroundColor: "black",
-            paddingTop: "50px",
-            paddingBottom: "30px",
-          }}
-        >
-          <div className="column" style={{ flex: "50%", marginLeft: "15px" }}>
-            {/* <h2 style={{color:'white'}}>Islington College</h2>
-         <h4 style={{color:'white'}}> Bachelor In Information Technology</h4>
-          <h5 style={{color:'white'}} >2019 - 2022</h5> */}
-            <Card
-              className="shadow-md m2 p3 rounded"
-              style={{
-                marginRight: "auto",
-                marginLeft: "auto",
-                display: "flex",
-                width: "100%",
-                background: `rgb(145,139,139)`,
-                background: `linear-gradient(90deg, rgba(145,139,139,1) 0%, rgba(31,31,74,1) 100%)`,
-              }}
-            >
-              <CardActionArea style={{ alignItems: "center" }}>
-                <div style={{ textAlign: "center" }}>
-                  <h1
-                    style={{
-                      fontStyle: "italic",
-                      color: "black",
-
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Islington College
-                  </h1>
-                  <h3 style={{ color: "black" }}>
-                    Bachelor In Information Technology
-                  </h3>
-                  <h4 style={{ color: "black" }}>2019 - 2022</h4>
-                </div>
-              </CardActionArea>
-            </Card>
-            <hr />
-
-            {/* <h2 style={{color:'white'}}>Rehdon College</h2>
-         <h4 style={{color:'white'}}> Higher Secondary Level</h4>
-          <h5 style={{color:'white'}} >2017 - 2019</h5> */}
-
-            <Card
-              className="shadow-md m2 p3 rounded"
-              style={{
-                marginRight: "auto",
-                marginLeft: "auto",
-                display: "flex",
-                width: "100%",
-                background: `rgb(145,139,139)`,
-                background: `linear-gradient(90deg, rgba(145,139,139,1) 0%, rgba(31,31,74,1) 100%)`,
-              }}
-            >
-              <CardActionArea style={{ alignItems: "center" }}>
-                <div style={{ textAlign: "center" }}>
-                  <h1
-                    style={{
-                      fontStyle: "italic",
-                      color: "black",
-
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Rehdon College
-                  </h1>
-                  <h3 style={{ color: "black" }}>Higher Secondary Level</h3>
-                  <h4 style={{ color: "black" }}>2017 - 2019</h4>
-                </div>
-              </CardActionArea>
-            </Card>
-
-            <hr />
-            {/* <h2 style={{color:'white'}}> Tarun Secondary School</h2>
-         <h4 style={{color:'white'}}> Secondary Level</h4>
-          <h5 style={{color:'white'}} >2005 - 2016</h5> */}
-
-            <Card
-              className="shadow-md m2 p3 rounded"
-              style={{
-                marginRight: "auto",
-                marginLeft: "auto",
-                display: "flex",
-                width: "100%",
-                background: `rgb(145,139,139)`,
-                background: `linear-gradient(90deg, rgba(145,139,139,1) 0%, rgba(31,31,74,1) 100%)`,
-              }}
-            >
-              <CardActionArea style={{ alignItems: "center" }}>
-                <div style={{ textAlign: "center" }}>
-                  <h1
-                    style={{
-                      fontStyle: "italic",
-                      color: "black",
-
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Tarun Secondary School
-                  </h1>
-                  <h3 style={{ color: "black" }}>Secondary Level</h3>
-                  <h4 style={{ color: "black" }}>2005 - 2016</h4>
-                </div>
-              </CardActionArea>
-            </Card>
-          </div>
-          <div className="column" style={{ flex: "50%", marginTop: "170px" }}>
-            <h1 style={{ color: "ButtonShadow" }}>EDUCATION</h1>{" "}
-            <SchoolIcon style={{ color: "white", fontSize: "50px" }} />
-          </div>
-        </div>
-
+        <Experience />
+        <Education />
         <Projects />
-
-        <div
-          className="row"
-          id="skills"
-          style={{
-            display: "flex",
-            height: "auto",
-            marginTop: "3px",
-            backgroundColor: "black",
-            paddingTop: "50px",
-            paddingBottom: "20px",
-          }}
-        >
-          <div
-            className="column"
-            style={{ flex: "50%", marginRight: "15px", marginLeft: "50px" }}
-          >
-            <Box
-              style={{
-                background: `rgb(145,139,139)`,
-                background: `linear-gradient(90deg, rgba(145,139,139,1) 0%, rgba(31,31,74,1) 100%)`,
-                boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
-              }}
-            >
-              <h2 style={{ color: "white" }}>
-                HTML/CSS/Java Script{" "}
-                <Rating name="size-small" defaultValue={4} />
-              </h2>
-            </Box>
-            <Box
-              style={{
-                background: `rgb(145,139,139)`,
-                background: `linear-gradient(90deg, rgba(145,139,139,1) 0%, rgba(31,31,74,1) 100%)`,
-                boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
-              }}
-            >
-              <h2 style={{ color: "white" }}>
-                MySql/MsSql <Rating name="size-small" defaultValue={4} />
-              </h2>
-            </Box>
-            <Box
-              style={{
-                background: `rgb(145,139,139)`,
-                background: `linear-gradient(90deg, rgba(145,139,139,1) 0%, rgba(31,31,74,1) 100%)`,
-                boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
-              }}
-            >
-              <h2 style={{ color: "white" }}>
-                Node JS
-                <Rating name="size-small" defaultValue={4} />
-              </h2>
-            </Box>
-
-            <Box
-              style={{
-                background: `rgb(145,139,139)`,
-                background: `linear-gradient(90deg, rgba(145,139,139,1) 0%, rgba(31,31,74,1) 100%)`,
-                boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
-              }}
-            >
-              <h2 style={{ color: "white" }}>
-                React JS <Rating name="size-small" defaultValue={4} />
-              </h2>
-            </Box>
-            <Box
-              style={{
-                background: `rgb(145,139,139)`,
-                background: `linear-gradient(90deg, rgba(145,139,139,1) 0%, rgba(31,31,74,1) 100%)`,
-                boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
-              }}
-            >
-              <h2 style={{ color: "white" }}>
-                {" "}
-                C# <Rating name="size-small" defaultValue={3} />
-              </h2>
-            </Box>
-            <Box
-              style={{
-                background: `rgb(145,139,139)`,
-                background: `linear-gradient(90deg, rgba(145,139,139,1) 0%, rgba(31,31,74,1) 100%)`,
-                boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
-              }}
-            >
-              <h2 style={{ color: "white" }}>
-                Python <Rating name="size-small" defaultValue={2} />
-              </h2>
-            </Box>
-            <Box
-              style={{
-                background: `rgb(145,139,139)`,
-                background: `linear-gradient(90deg, rgba(145,139,139,1) 0%, rgba(31,31,74,1) 100%)`,
-                boxShadow: `rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px`,
-              }}
-            >
-              <h2 style={{ color: "white" }}>
-                Java <Rating name="size-small" defaultValue={2} />
-              </h2>
-            </Box>
-          </div>
-          <div className="column" style={{ flex: "50%", marginTop: "120px" }}>
-            <h1 style={{ color: "white" }}>SKILLS</h1>{" "}
-            <ComputerIcon style={{ color: "white", fontSize: "50px" }} />
-          </div>
-        </div>
-
+        <Skills />
         <Contact />
-
         <BackToTopButton />
         <Footer />
       </div>

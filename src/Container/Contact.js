@@ -8,7 +8,7 @@ import TextareaAutosize from "@mui/material/TextareaAutosize";
 const Contact = () => {
   return (
     <div
-    id="contact"
+      id="contact"
       className="row"
       style={{
         display: "flex",
@@ -16,12 +16,21 @@ const Contact = () => {
         marginTop: "3px",
         backgroundColor: "black",
         paddingTop: "50px",
-        paddingBottom:"20px"
+        paddingBottom: "20px",
+        position: "relative",
       }}
     >
-      <div className="column" style={{ flex: "50%", marginTop: "160px" }}>
+      <div
+        className="column"
+        style={{
+          flex: "50%",
+          marginTop: "160px",
+          position: "relative",
+          transform: "translate(0%, 10%)",
+        }}
+      >
         <h1 style={{ color: "white" }}>CONTACT</h1>
-        <LocalPhoneIcon style={{ color: "white", fontSize:'50px'  }} />
+        <LocalPhoneIcon style={{ color: "white", fontSize: "50px" }} />
       </div>
 
       <div className="column" style={{ flex: "50%", marginRight: "15px" }}>
@@ -39,8 +48,15 @@ const Contact = () => {
             <br />
             <article>
               <EmailIcon style={{ color: "white", marginRight: "5px" }} />
-              <span > <a style={{ color: "white" }} href="mailto:sandipgajulre9191@gmail.com">Sandipgajurel809@gmail.com</a></span>
-             
+              <span>
+                {" "}
+                <a
+                  style={{ color: "white" }}
+                  href="mailto:sandipgajulre9191@gmail.com"
+                >
+                  Sandipgajurel809@gmail.com
+                </a>
+              </span>
             </article>
           </div>
           <hr />
@@ -56,7 +72,7 @@ const Contact = () => {
               Your Name:{" "}
             </label>
             <TextField
-              style={{ backgroundColor: "#78797a",width:'auto' }}
+              style={{ backgroundColor: "#78797a", width: "auto" }}
               id="standard-basic"
               required
               type="text"
@@ -70,7 +86,7 @@ const Contact = () => {
               Your Email:{" "}
             </label>
             <TextField
-              style={{ backgroundColor: "#78797a", width:'auto' }}
+              style={{ backgroundColor: "#78797a", width: "auto" }}
               id="standard-basic"
               required
               type="email"
@@ -89,7 +105,7 @@ const Contact = () => {
               required
               placeholder="Minimum 3 rows"
               style={{
-                width: 'auto',
+                width: "auto",
                 backgroundColor: "#78797a",
                 marginLeft: "5px",
               }}

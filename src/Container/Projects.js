@@ -10,13 +10,21 @@ const Projects = () => {
       style={{
         display: "flex",
         height: "auto",
+        position: "relative",
         marginTop: "3px",
         backgroundColor: "black",
-        paddingTop: "50px",
-        paddingBottom: "20px",
+        paddingTop: "30px",
+        paddingBottom: "30px",
       }}
     >
-      <div className="column" style={{ flex: "50%", marginTop: "240px" }}>
+      <div
+        className="column"
+        style={{
+          flex: "50%",
+          position: "relative",
+          transform: "translate(0%, 40%)",
+        }}
+      >
         <h1 style={{ color: "ButtonShadow" }}>PROJECTS</h1>
         <TaskAltIcon style={{ color: "white", fontSize: "50px" }} />
       </div>
@@ -31,7 +39,7 @@ const Projects = () => {
             width: "100%",
             background: `rgb(168,164,164)`,
             background: `linear-gradient(90deg, rgba(168,164,164,1) 31%, rgba(131,121,189,1) 100%)`,
-          }}
+            }}
         >
           <CardActionArea style={{ alignItems: "center" }}>
             <div style={{ textAlign: "center" }}>

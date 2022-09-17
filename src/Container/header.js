@@ -16,17 +16,15 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-
 const useStyles = makeStyles((theme) => ({
   navlinks: {
     marginLeft: theme.spacing(5),
     display: "flex",
   },
   logo: {
-    paddingRight:'100px',
+    paddingRight: "100px",
     flexGrow: "1",
     cursor: "pointer",
-  
   },
   link: {
     textDecoration: "none",
@@ -46,39 +44,37 @@ function Header() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <AppBar position="fixed"
-    style={{backgroundColor:'#2f2626'}}
-    >
+    <AppBar position="fixed" style={{ backgroundColor: "#2f2626" }}>
       <CssBaseline />
       <Toolbar>
         <Typography variant="h5" className={classes.logo}>
           Sandip Gajurel
           <hr />
-          <div style={{ float: "right"}}>
+          <div style={{ float: "right" }}>
             <a
               href="https://www.facebook.com/laxman.gajurel.50"
-              style={{ marginRight: "5px", color:'blue' }}
+              style={{ marginRight: "5px", color: "yellow" }}
             >
               <FacebookIcon />
             </a>
 
             <a
               href="https://www.instagram.com/?hl=en"
-              style={{ marginRight: "5px", color:'blue' }}
+              style={{ marginRight: "5px", color: "yellow" }}
             >
               <InstagramIcon />
             </a>
 
             <a
               href="https://www.linkedin.com/in/sandip-gajurel-835200240"
-              style={{ marginRight: "5px", color:'blue' }}
+              style={{ marginRight: "5px", color: "yellow" }}
             >
               <LinkedInIcon />
             </a>
 
             <a
               href="https://github.com/Sandipgajurel"
-              style={{color:'blue', marginRight:'100px'}}
+              style={{ color: "yellow", marginRight: "100px" }}
             >
               <GitHubIcon />
             </a>
@@ -88,19 +84,39 @@ function Header() {
           <DrawerComponent />
         ) : (
           <div className={classes.navlinks}>
-            <Link  to="experience" className={classes.link} spy={true} smooth={true}>
+            <Link
+              to="experience"
+              className={classes.link}
+              spy={true}
+              smooth={true}
+            >
               Experience
             </Link>
-            <Link to="education" className={classes.link} spy={true} smooth={true}>
+            <Link
+              to="education"
+              className={classes.link}
+              spy={true}
+              smooth={true}
+            >
               Education
             </Link>
-            <Link to="projects" className={classes.link} spy={true} smooth={true}>
+            <Link
+              to="projects"
+              className={classes.link}
+              spy={true}
+              smooth={true}
+            >
               Projects
             </Link>
             <Link to="skills" className={classes.link} spy={true} smooth={true}>
               Skills
             </Link>
-            <Link to="contact" className={classes.link} spy={true} smooth={true}>
+            <Link
+              to="contact"
+              className={classes.link}
+              spy={true}
+              smooth={true}
+            >
               Contact
             </Link>
           </div>
