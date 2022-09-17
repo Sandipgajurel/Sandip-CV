@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "135c8be2be3505c572d2",
+    "revision": "9d8f6669b1d4becc1c2e",
     "url": "/Sandip-CV/static/css/main.e97448e9.chunk.css"
   },
   {
-    "revision": "135c8be2be3505c572d2",
-    "url": "/Sandip-CV/static/js/main.135c8be2.chunk.js"
+    "revision": "9d8f6669b1d4becc1c2e",
+    "url": "/Sandip-CV/static/js/main.9d8f6669.chunk.js"
   },
   {
     "revision": "dbc81d6accd7b44ce102",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/Sandip-CV/static/media/3.cba0b89d.png"
   },
   {
-    "revision": "7f5a4ced2aa3aee44f4c91e50a785312",
+    "revision": "35f32831eef7aebb20e65b3a259298ad",
     "url": "/Sandip-CV/index.html"
   }
 ];
